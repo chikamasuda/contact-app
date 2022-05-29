@@ -47,3 +47,62 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.span {
+    width: 31px !important;
+}
+
+.pagination-area {
+    align-items: center;
+}
+
+.table-row {
+    vertical-align: middle;
+}
+
+.table {
+    width: auto;
+}
+
+.id-row {
+    width: 5%;
+}
+
+.name-row {
+    width: 15%;
+}
+
+.gender-row {
+    width: 10%;
+}
+
+.email-row {
+    width: 20%;
+}
+
+.opinion-row {
+    width: 40%;
+}
+
+.button-row {
+    width: 10%;
+}
+
+.opinion {
+    max-width: 420px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+
+.opinion:hover {
+    white-space: normal;
+}
+
+.reset-button {
+    border: none;
+    background-color: transparent;
+    text-decoration: underline;
+    cursor: pointer;
+}

@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Contact-Form</title>
+  <title>contact_form</title>
   <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
   <link rel="stylesheet" href="{{ asset('../css/main.css') }}">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">

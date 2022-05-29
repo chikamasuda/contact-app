@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\AdminController;
 
 
 /*
@@ -13,7 +15,12 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+//問い合わせページ
+Route::get('/', [ContactController::class, 'index'])->name('index');
+Route::post('/confirm', [ContactController::class, 'confirm'])->name('confirm');
+Route::post('/send', [ContactController::class, 'send'])->name('send');
 
-Route::get('/', [App\Http\Controllers\ContactController::class, 'index'])->name('index');
-Route::post('/confirm', [App\Http\Controllers\ContactController::class, 'confirm'])->name('confirm');
-Route::post('/send', [App\Http\Controllers\ContactController::class, 'send'])->name('send');
+//管理画面
+Route::get('/admin', [AdminController::class, 'index'])->name('admin.index');;
+Route::delete('/contacts/{contact}/destroy', [AdminController::class, 'destroy'])->name('contacts.destroy');
+Route::get('/contacts/search', [AdminController::class, 'search'])->name('contacts.search');
