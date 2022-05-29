@@ -59,8 +59,8 @@
           <div class="mt-4 text-center">
             <input type="submit" class="btn btn-primary px-5" value="検索">
           </div>
-          <div class="mt-2 text-center mb-2">
-            <button name="reset" class="text-primary reset-button">リセット</button>
+          <div class="text-center mx-auto mt-2">
+            <button type="submit" class="reset-button text-primary" name="reset">リセット</button>
           </div>
         </form>
       </div>

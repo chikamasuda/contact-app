@@ -69,7 +69,7 @@ body {
 }
 
 .name-row {
-    width: 15%;
+    width: 18%;
 }
 
 .gender-row {
@@ -77,15 +77,15 @@ body {
 }
 
 .email-row {
-    width: 20%;
+    width: 18%;
 }
 
 .opinion-row {
-    width: 40%;
+    width: 39%;
 }
 
 .button-row {
-    width: 10%;
+    width: 15%;
 }
 
 .opinion {
