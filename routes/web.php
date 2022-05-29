@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [App\Http\Controllers\ContactController::class, 'index'])->name('index');
+Route::post('/confirm', [App\Http\Controllers\ContactController::class, 'confirm'])->name('confirm');
+Route::post('/send', [App\Http\Controllers\ContactController::class, 'send'])->name('send');
