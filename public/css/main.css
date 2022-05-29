@@ -101,8 +101,8 @@ body {
 }
 
 .reset-button {
-    border: none;
-    background-color: transparent;
-    text-decoration: underline;
+    border: none !important;
+    background-color: transparent !important;
+    text-decoration: underline !important;
     cursor: pointer;
 }
