@@ -14,7 +14,7 @@ class AdminController extends Controller
      */
     public function index()
     {
-        $contacts = Contact::latest()->orderBy('id', 'asc')->paginate(10);
+        $contacts = Contact::latest()->paginate(10);
 
         return view('admin', compact('contacts'));
     }

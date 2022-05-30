@@ -65,7 +65,7 @@
               <span class="font-weight-bold">〒</span>
             </div>
             <div class="input-post">
-              <input name="postcode" value="{{ old('postcode') }}" type="text" class="form-control" id="郵便番号" onKeyUp="$('#郵便番号').zip2addr('#住所');">
+              <input name="postcode" value="{{ old('postcode') }}" type="text" class="form-control" onKeyUp="AjaxZip3.zip2addr(this,'','address','address');">
               <p class="text-secondary example-text">例）123-4567</p>
               @error('postcode') <span class="error text-danger">{{ $message }}</span> @enderror
             </div>
