@@ -67,7 +67,7 @@
     </div>
     <div class="d-flex justify-content-between mt-5 mb-3 pagination-area">
       @if( $contacts->total() > 0)
-      <p>全{{ $contacts->total() }}件中{{ $contacts->firstItem() }}件〜{{ $contacts->lastItem() }}件</p>
+      <p>全{{ $contacts->total() }}件中<span class="ms-2">{{ $contacts->firstItem() }}件〜{{ $contacts->lastItem() }}件</span></p>
       @else
       該当のお問い合わせがありません。
       @endif
