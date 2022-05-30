@@ -9,6 +9,10 @@ use App\Models\Contact;
 class ContactFactory extends Factory
 {
     protected $model = Contact::class;
+
+    protected static $sequence = 1;
+
+
     /**
      * Define the model's default state.
      *˙
@@ -16,7 +20,12 @@ class ContactFactory extends Factory
      */
     public function definition()
     {
+
+
         return [
+            'id' => function () {
+                return self::$sequence++;
+            },
             'fullname'      => $this->faker->name,
             'gender'        => $this->faker->numberBetween($min = 1, $max = 2),
             'email'         => $this->faker->unique()->safeEmail,
